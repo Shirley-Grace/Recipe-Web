@@ -25,13 +25,31 @@ h1{
 :placeholder-shown{
   text-align: center;
 }
-.header input{
+.header form{
+  border-radius: 10px;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+.ionicon{
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+}
+form input{
   background-color: peachpuff;
+  border: 1px solid black;
   border-radius: 10px;
   color: black;
   font-size: 20px;
-  margin-top: 20px;
-  border:transparent ;
+  margin-top: 10px;
+  /* border:transparent ; */
+
   
 }
 .card{
@@ -70,8 +88,17 @@ h1{
   margin-left: 10px;
   
 }
+
+.content{
+display: grid;
+grid-template-rows: auto /repeat(auto-fit,minmax(300px,1fr 1fr));
+
+
+
+
+}
 .footer{
-  position: absolute;
+  position: relative;
   bottom: 0%;
   background-color: white;
   width: 100%;
